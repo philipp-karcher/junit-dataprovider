@@ -30,6 +30,6 @@ jobs:
       with:
         arguments: test
     - name: Upload Test Results
-      uses: actions/upload-artifact@v3.1.1
+      uses: EnricoMi/publish-unit-test-result-action@v1
       with:
         path: '**/build/test-results/**/*.xml'
